@@ -1,5 +1,3 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,12 +10,12 @@ import org.junit.jupiter.api.Test;
  * @version 03/2024
  */
 public class GroundTransportationTest {
-    
     private GroundTransportation groundTransport;
 
     @BeforeEach
     public void setUp() {
         groundTransport = new GroundTransportation("ABC123");
+        groundTransport.setFees(0.03);
     }
 
     @Test
